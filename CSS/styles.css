@@ -1,0 +1,131 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+
+  color: rgb(252, 251, 232);
+}
+
+body {
+  background-image: url("../images/portfolio-bcp.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(14, 14, 14, 0.801);
+  z-index: -1;
+}
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+  /* padding: 100px 0; */
+}
+
+.grid--col-3 {
+  display: grid;
+  grid-template-columns: 1fr 4fr 1fr;
+}
+
+.grid {
+  gap: 30px;
+}
+
+.list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.nav--list {
+  padding: 100px 0 0 0;
+}
+
+.nav--item {
+  font-size: 18px;
+  padding: 12px 24px;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.icon {
+  width: 32px;
+  height: 32px;
+  fill: rgb(252, 251, 232);
+}
+
+.link:link,
+.link:visited {
+  display: inline-block;
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+
+  transition: all 300ms;
+}
+
+.link:hover,
+.link:active {
+  color: rgb(219, 219, 204);
+  border-bottom: 1px solid rgb(219, 219, 204);
+}
+
+.description {
+  padding: 150px 32px 0 32px;
+}
+
+.name {
+  font-family: "EB Garamond", serif;
+  text-transform: uppercase;
+  font-size: 64px;
+}
+
+hr {
+  border-color: rgb(219, 219, 204);
+  border: none;
+  border-top: 1px solid;
+  margin-bottom: 20px;
+}
+
+.title {
+  font-family: "Dancing Script", cursive;
+  font-size: 32px;
+  text-align: right;
+  margin-bottom: 32px;
+}
+
+.details {
+  font-family: Roboto;
+  font-size: 20px;
+  line-height: 2;
+}
+
+.social {
+  text-align: center;
+  padding-top: 280px;
+}
+
+.social-icon {
+  width: 64px;
+  height: 64px;
+  fill: rgb(233, 233, 233);
+}
+
+.social--list {
+  gap: 30px;
+}
+
+.social--link:link,
+.social--link:active {
+  display: inline-block;
+  transition: all 300ms;
+}
+
+.social--link:hover,
+.social--link:active {
+  transform: scale(1.1);
+}
